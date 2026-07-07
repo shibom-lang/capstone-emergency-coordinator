@@ -2,10 +2,10 @@
 
 An autonomous AI agent designed to match people in crisis with local emergency resources, built for the Kaggle *AI Agents: Intensive Vibe Coding Capstone Project*.
 
-## 🌟 Overview (Agents for Good)
+##  Overview (Agents for Good)
 During natural disasters or local emergencies, finding real-time, accurate information about available shelters and food banks is critical. The **Emergency Response Coordinator** acts as an autonomous concierge, translating natural language requests into structured database queries to match citizens with verified local resources.
 
-## 🏗 Architecture
+##  Architecture
 This project implements the "Factory Model" and Agentic Engineering best practices:
 
 1.  **Antigravity Agent (`agent.py`)**: The central brain (using Gemini 3.1 Pro) that processes intent and orchestrates tool calls.
@@ -22,7 +22,7 @@ graph TD;
     Agent -->|Formatted Response| User
 ```
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Python 3.10+
