@@ -3,6 +3,7 @@ from mcp.server import Server
 from mcp.server.stdio import stdio_server
 from mcp.types import Tool, TextContent
 import sqlite3
+import asyncio
 
 server = Server("resource-db")
 db = sqlite3.connect(":memory:")
@@ -40,5 +41,4 @@ async def main():
         await server.run(read, write, init_options)
 
 if __name__ == "__main__":
-    import asyncio
     asyncio.run(main())
