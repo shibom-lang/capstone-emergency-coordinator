@@ -3,3 +3,4 @@ uvicorn>=0.46
 google-antigravity
 mcp
 pydantic
+fastmcp

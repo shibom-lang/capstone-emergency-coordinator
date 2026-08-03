@@ -1,7 +1,7 @@
-from mcp.server.fastmcp import FastMCP
+from mcp.server import fastmcp
 import sqlite3
 
-mcp = FastMCP("resource-db")
+mcp = fastmcp.FastMCP("resource-db")
 db = sqlite3.connect(":memory:", check_same_thread=False)
 db.execute("CREATE TABLE resources (id INTEGER PRIMARY KEY, type TEXT, name TEXT, capacity INTEGER)")
 db.execute("INSERT INTO resources (type, name, capacity) VALUES ('shelter', 'Downtown Community Center', 50)")
