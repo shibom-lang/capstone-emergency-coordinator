@@ -4,6 +4,8 @@ from google.antigravity import Agent, LocalAgentConfig, types
 import os
 import sys
 
+os.environ["HOME"] = "/tmp"
+
 app = FastAPI()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 MCP_PATH = os.path.join(BASE_DIR, "mcp_server.py")
