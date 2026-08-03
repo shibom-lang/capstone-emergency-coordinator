@@ -6,6 +6,7 @@ from fastapi.templating import Jinja2Templates
 from pydantic import BaseModel
 from google.antigravity import Agent, LocalAgentConfig, types
 import os
+import sys
 
 app = FastAPI()
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -17,7 +18,7 @@ config = LocalAgentConfig(
     mcp_servers=[
         types.McpStdioServer(
             name="resource-db",
-            command="python3",
+            command=sys.executable,
             args=[MCP_PATH]
         )
     ]
